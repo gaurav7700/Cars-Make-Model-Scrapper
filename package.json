@@ -1,17 +1,26 @@
 {
-  "name": "redbook",
+  "name": "scrap",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
   "scripts": {
     "start": "nodemon index.js",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "heroku-postbuild": "NPM_CONFIG_PRODUCTION=false npm install"
+  },
+  "engines": {
+    "node": "16.x"
   },
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "axios": "^0.27.2",
+    "cheerio": "^1.0.0-rc.12",
+    "chrome-cookies-secure": "^2.0.0",
+    "cors": "^2.8.5",
+    "express": "^4.18.1",
     "nodemon": "^2.0.20",
-    "puppeteer": "^18.2.1",
+    "pretty": "^2.0.0",
+    "puppeteer": "^18.0.5",
     "puppeteer-extra": "^3.3.4",
     "puppeteer-extra-plugin-stealth": "^2.11.1"
   }
